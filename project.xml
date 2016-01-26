@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+
+	<meta title="OpenFLAndroid" package="com.sample.openflandroid" version="1.0.0" company="Company Name" />
+	<app main="Main" path="Export" file="OpenFLAndroid" />
+
+	<source path="Source" />
+
+	<haxelib name="openfl" />
+
+	<assets path="Assets" rename="assets" />
+
+	<window background="#000000" fps="30" />
+	<window if="mobile" orientation="portrait" />
+	<window if="desktop" resizable="false" width="700" height="900" />
+
+
+  <android target-sdk-version="23" />
+  <android minimum-sdk-version="16" />
+
+  <architecture name="armv7" exclude="armv6" if="android" />
+</project>
